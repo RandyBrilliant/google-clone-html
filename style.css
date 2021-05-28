@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  color: #222;
+}
+ul {
+  display: flex;
+  align-items: center;
+}
+li {
+  margin: 0 15px;
+}
+.avatar {
+  width: 30px;
+  border-radius: 50%;
+}
+.nav-links {
+  color: #222;
+  font-size: 15px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.input-text {
+  width: 600px;
+  height: 45px;
+  border-radius: 50px;
+  border: 1px solid #dfe1e5;
+  margin-bottom: 30px;
+  padding: 5px 20px;
+  font-size: 17px;
+}
+.input-text:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+.input-text:focus {
+  outline: none;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+.btn {
+  background: #f8f9fa;
+  color: #3c4043;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  padding: 12px 17px;
+  font-size: 15px;
+  margin: 0 10px;
+  border: 1px solid #f8f9fa;
+}
+.btn:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  border: 1px solid #dadce0;
+  color: #202124;
+  text-decoration: none;
+}
+.offering {
+  font-size: 14px;
+  margin-top: 30px;
+}
+.offering > a {
+  margin: 0 10px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  background: #f2f2f2;
+  width: 100%;
+  font-size: 14px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.language {
+  padding: 15px 20px;
+  border-bottom: 1px solid #dadce0;
+}
+.footer-link {
+  color: #222;
+}
+@media (max-width: 765px) {
+  li {
+    margin: 0 10px;
+  }
+  main {
+    margin-top: 100px;
+  }
+  .avatar {
+    width: 30px;
+  }
+  .nav-links {
+    font-size: 12px;
+  }
+  .main-img > img {
+    width: 150px;
+  }
+  .input-text {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    margin: 0 7px;
+  }
+  .offering {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .offering > a {
+    margin: 0 5px;
+  }
+  footer {
+    display: none;
+  }
+}
